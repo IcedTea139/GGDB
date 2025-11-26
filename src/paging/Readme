@@ -1,0 +1,8 @@
+This will be where pages, low level allocation, and RAM demand paging will be implemented. The page manager should support and bridge the page implementation with the storage engine in Store. 
+
+
+
+The buffer pool will ultimately be based off of Neo4j's paging documentation found:
+neo4j/community/io/src/main/java/org/neo4j/io/pagecache/impl/muninn/page-cache-internals.adoc
+
+Note: our approach will be simpler because neo4j uses off heap buffers in order to bypass Java's garbage collection.
